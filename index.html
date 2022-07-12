@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="javascript.js"></script>
   <meta charset="UTF-8">
   <title>Page Title</title>
 </head>
 <body>
-  <script src="javascript.js">
-  </script>
+  <h1>Rock, paper, scissors</h1>
+  <div class="results">
+    <p>Please click on a button to start the game!</p>
+  </div>
+  <div class="playButtons">
+      <button class="playButton"  id="rock">ROCK</button>
+      <button class="playButton"  id="paper">PAPER</button>
+      <button  class="playButton"  id="scissors">SCISSORS</button>
+  </div>
+  <div class="scoreBar">
+    <p class="score" id="playerScore">Player: </p>
+    <p class="score" id="compScore">Computer: </p>
+  </div>
+  <div class="refresh">
+  <button class="playAgain" type="submit" onClick="refreshPage()">Play Again!</button>
+  </div>
 </body>
 </html>
